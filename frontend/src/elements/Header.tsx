@@ -16,19 +16,6 @@ const Header: React.FC = () => {
 };
 
 // Styles using styled-components
-const HeroSection = styled.section`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 100vw; /* Prend toute la largeur de l'écran */
-    height: 100vh; /* Prend toute la hauteur de l'écran */
-    max-width: 1200px; /* Évite que le contenu s'étale trop */
-    margin: 0 auto; /* Centre horizontalement */
-    padding: 20px; /* Ajoute un peu d'espace autour */
-    box-sizing: border-box; /* Évite les débordements */
-`;
 
 const HeaderContainer = styled.header`
     width: 100%;
