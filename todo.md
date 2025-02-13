@@ -1,4 +1,5 @@
-- [ ] Mettre en plavce des champs
-- [ ] 
-- [ ] 
-- [ ] 
+- [ ] Header
+- [ ] Compétences
+- [ ] Projets (3x3)
+- [ ] CV
+- [ ] Contact
