@@ -6,8 +6,8 @@ const Hero: React.FC = () => {
     return (
         <HeroSection>
             <HeroTitle>Développeur Parisien Passioné</HeroTitle>
-            <HeroSubtitle>Web et Logiciel, Spécialité Frontend</HeroSubtitle>
-            <Button>En savoir plus</Button>
+            <HeroSubtitle>Web et Logiciel</HeroSubtitle>
+            <Button label="Contactez-moi" />
         </HeroSection>
     );
 };

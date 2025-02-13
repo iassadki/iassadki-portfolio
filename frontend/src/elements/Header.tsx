@@ -1,48 +1,53 @@
 import React from 'react';
+import styled from 'styled-components';
 
 const Header: React.FC = () => {
     return (
-        <header style={headerStyle}>
-            <h2 style={titleStyle}>Ilias ASSADKI</h2>
-            <nav style={navStyle}>
-                <a href="#hero" style={linkStyle}>Home</a>
-                <a href="#method" style={linkStyle}>About Me</a>
-                <a href="#projects" style={linkStyle}>Projects</a>
-                <a href="#contact" style={linkStyle}>Contact</a>
-            </nav>
-        </header>
+        <HeaderContainer>
+            <Title>Ilias ASSADKI</Title>
+            <Nav>
+                <NavLink href="#hero">Home</NavLink>
+                <NavLink href="#method">About Me</NavLink>
+                <NavLink href="#projects">Projects</NavLink>
+                <NavLink href="#contact">Contact</NavLink>
+            </Nav>
+        </HeaderContainer>
     );
 };
 
-// Styles
-const headerStyle: React.CSSProperties = {
-    width: '100%',
-    borderRadius: '50px',
-    fontWeight: 600,
-    padding: '10px 40px',
-    backgroundColor: '#88AEDB',
-    color: '#324159',
-    border: '2px solid #324159',
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-};
+// Styles using styled-components
+const HeaderContainer = styled.header`
+    width: 100%;
+    border-radius: 50px;
+    font-weight: 600;
+    padding: 10px 40px;
+    background-color: #88aedb;
+    color: #324159;
+    border: 2px solid #324159;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+`;
 
-const titleStyle: React.CSSProperties = {
-    fontWeight: 700,
-    color: 'var(--black-text-color)',
-};
+const Title = styled.h2`
+    font-weight: 700;
+    color: #000;
+`;
 
-const navStyle: React.CSSProperties = {
-    display: 'flex',
-    gap: '15px',
-};
+const Nav = styled.nav`
+    display: flex;
+    gap: 15px;
+`;
 
-const linkStyle: React.CSSProperties = {
-    color: 'var(--black-text-color)',
-    textDecoration: 'none',
-    fontWeight: 500,
-    transition: 'color 0.3s ease-in-out',
-};
+const NavLink = styled.a`
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+        color: #555;
+    }
+`;
 
 export default Header;
