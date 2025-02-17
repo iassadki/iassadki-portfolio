@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Button from '../components/Button'
 
 const Header: React.FC = () => {
     return (
@@ -9,23 +10,22 @@ const Header: React.FC = () => {
                 <NavLink href="#hero">Accueil</NavLink>
                 <NavLink href="#method">Moi</NavLink>
                 <NavLink href="#projects">Projets</NavLink>
-                <NavLink href="#contact">Contact</NavLink>
+                <NavLink href="#resume">CV</NavLink>
+                {/* <Button label="Me contacter" /> */}
             </Nav>
         </HeaderContainer>
     );
 };
 
 // Styles using styled-components
-
 const HeaderContainer = styled.header`
-    width: 100%;
-    height: 80px; /* Hauteur fixe pour éviter qu'il change */
-    max-width: 1200px; /* Empêche le header d'être trop large */
+    width: 1200px;
+    height: 80px;
     margin: 0 auto; /* Centre le header */
     z-index: 1000; /* Toujours au-dessus */
     border-radius: 50px;
     background-color: #88aedb;
-    border: 3px solid #324159;
+    box-shadow: 0 4px 8px #88aedb;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,7 +34,7 @@ const HeaderContainer = styled.header`
 `;
 
 const Title = styled.h2`
-    font-weight: 700;
+    font-weight: 200;
     color: #000;
 `;
 

@@ -14,11 +14,11 @@ const Button: React.FC<ButtonProps> = ({ label }) => {
 };
 
 const StyledButton = styled.button`
-    padding: 10px 20px;
-    border-radius: 20px;
+    padding: 15px 20px;
+    border-radius: 30px;
     border: none;
-    background-color: #007BFF;
-    color: white;
+    background-color: #88AEDB;
+    color: #324159;
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s ease-in-out;

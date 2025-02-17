@@ -3,6 +3,10 @@ import { useState } from 'react'
 // import viteLogo from './assets/images/vite.svg'
 import Header from './elements/Header.tsx'
 import Hero from './elements/Hero.tsx'
+import Skills from './elements/Skills.tsx'
+import Projects from './elements/Projects.tsx'
+import Resume from './elements/Resume.tsx'
+import Contact from './elements/Contact.tsx'
 import './assets/styles/App.css'
 
 function App() {
@@ -11,6 +15,10 @@ function App() {
     <>
       <Header />
       <Hero />
+      <Skills />
+      <Projects />
+      <Resume />
+      <Contact />
 
     </>
   )

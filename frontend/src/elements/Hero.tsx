@@ -5,10 +5,10 @@ import Button from '../components/Button';
 const Hero: React.FC = () => {
     return (
         <HeroSection>
-            <HeroTitle>Développeur Web et Logiciel</HeroTitle>
-            <HeroTitle>Parisien et Passioné</HeroTitle>
-            <HeroSubtitle>Développeur Web & Logiciel passionné créant des solutions digitales performantes et intuitives</HeroSubtitle>
-            <HeroSubtitle>alliant expertise technique et créativité." 🚀</HeroSubtitle>
+            <HeroTitle>Développeur Web et Logiciel 🚀</HeroTitle>
+            {/* <HeroTitle>Parisien et Passioné</HeroTitle> */}
+            <HeroSubtitle>Créateur passionné de solutions digitales, performantes et intuitives</HeroSubtitle>
+            <HeroSubtitle>doté d'expertise technique et de créativité.</HeroSubtitle>
             <ButtonContainer>
                 <Button label="Voir mes projets" />
                 <Button label="Me contacter" />
@@ -28,7 +28,7 @@ const HeroSection = styled.section`
 
 const HeroTitle = styled.h1`
     font-size: 3rem;
-    color: var(--primary-color);;
+    color: var(--primary-color);
     font-family: var(--primary-font);
 `;
 
@@ -36,7 +36,7 @@ const HeroSubtitle = styled.h2`
     font-size: 15px;
     color: var(--grey-color);
     font-weight: 100;
-    margin-top: 5px;
+    margin-top: -5px;
 `;
 
 const ButtonContainer = styled.div`
